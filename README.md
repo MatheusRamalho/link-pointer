@@ -38,7 +38,7 @@ yarn dev
 
 You can view the project through the links below:
 
-- [Live Preview](https://myonix.vercel.app/)
+- [Live Preview](https://link-pointer.vercel.app/)
 
 <br>
 
