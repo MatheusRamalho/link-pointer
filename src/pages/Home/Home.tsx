@@ -6,7 +6,8 @@ import { Card, CardGroup } from '../../components/Card/Card';
 import { Button } from '../../components/Button/Button';
 
 // STYLES...
-import { SectionHeader, SectionInfos } from './HomeStyled';
+import { SectionHeader, SectionInfos } from './Home.styles';
+import { Smartphone } from '../../components/Smartphone';
 
 export function Home() {
     return (

@@ -28,7 +28,7 @@ export function Footer() {
 
                 <div className="footer__owner">
                     <address>
-                        <p> 2022 &copy; Mat Ramalho .Todos os direitos reservados </p>
+                        <p> &copy; 2022 Matheus Ramalho. Todos os direitos reservados. </p>
                     </address>
 
                     <div className="contacts__">

@@ -75,17 +75,15 @@ export const SmartphoneWrapper = styled.div`
     }
 
     @media(min-width: 769px) and (max-width: 1400px) {
-        .smartphone__ {
             top: -15%;
             left: 50%;
             transform: translateX(-50%);
-        }
+
     }
 
     @media(max-width: 768px) {
-        .smartphone__ {
             display: none;
             opacity: 0;
-        }
+
     }
 `;

@@ -58,7 +58,7 @@ export const SectionInfos = styled.section`
         }
 
         .infos__inner {
-            justify-content: flex-end;
+            /* justify-content: flex-end; */
 
             div {
                 max-width: 60%;

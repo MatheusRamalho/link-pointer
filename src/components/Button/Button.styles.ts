@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ButtonWrapper = styled.button`
     cursor: pointer;
 
-    height: 2.5rem;
+    width: fit-content;
+    height: 3rem;
     padding: 0 1.2rem;
     margin: 0.5rem;
     border: none;
@@ -34,7 +35,7 @@ export const ButtonWrapper = styled.button`
 
     &.outlined__ {
         border: 0.125rem solid currentColor;
-        background-color: var(--white);
+        background-color: transparent;
 
         color: var(--colorDark);
 

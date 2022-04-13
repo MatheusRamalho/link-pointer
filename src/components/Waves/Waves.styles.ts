@@ -9,7 +9,7 @@ export const WavesWrapper = styled.div`
 
     width: 100%;
     height: 6.25rem;
-    background-image: url({imageWaves});
+    background-image: url(${imageWaves});
     background-size: 62.5rem 6.25rem;
 
     &.wave__one,

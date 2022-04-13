@@ -6,7 +6,8 @@ import { Button } from '../../components/Button/Button';
 import { SocialMedia, SocialMediaItem } from '../../components/SocialMedia/SocialMedia';
 
 // STYLES...
-import { SectionLink } from './LinkStyled';
+import { SectionLink } from './Link.styles';
+
 import homeImg from '../../assets/images/home.svg';
 import avatarImg from '../../assets/images/avatar.svg';
 import siteImg from '../../assets/images/site.svg';
