@@ -8,14 +8,14 @@ import { SocialMedia, SocialMediaItem } from '../../components/SocialMedia/Socia
 // STYLES...
 import { SectionLink } from './Link.styles';
 
-import homeImg from '../../assets/images/home.svg';
-import avatarImg from '../../assets/images/avatar.svg';
-import siteImg from '../../assets/images/site.svg';
-import instagramImg from '../../assets/images/instagram.svg';
-import facebookImg from '../../assets/images/facebook.svg';
-import twitterImg from '../../assets/images/twitter.svg';
+import homeImg from '../../assets/svgs/home.svg';
+import avatarImg from '../../assets/svgs/avatar.svg';
+import siteImg from '../../assets/svgs/site.svg';
+import instagramImg from '../../assets/svgs/instagram.svg';
+import facebookImg from '../../assets/svgs/facebook.svg';
+import twitterImg from '../../assets/svgs/twitter.svg';
 
-export function LinkPage() {
+export const LinkPage = () => {
     return (
         <SectionLink>
             <h6 hidden> Section Link </h6>

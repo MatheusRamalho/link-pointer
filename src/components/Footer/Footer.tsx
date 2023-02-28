@@ -1,16 +1,14 @@
 import { FooterWrapper } from './Footer.styles';
 
-// COMPONENTS...
 import { Button } from '../Button/Button';
 import { SocialMedia, SocialMediaItem } from '../SocialMedia/SocialMedia';
 
-// IMAGES...
-import logoImg from '../../assets/images/logo.svg';
-import triangleImg from '../../assets/images/triangle.svg';
-import siteImg from '../../assets/images/site.svg';
-import githubImg from '../../assets/images/github.svg';
+import logoImg from '../../assets/svgs/logo.svg';
+import triangleImg from '../../assets/svgs/triangle.svg';
+import siteImg from '../../assets/svgs/site.svg';
+import githubImg from '../../assets/svgs/github.svg';
 
-export function Footer() {
+export const Footer = () => {
     return (
         <FooterWrapper>
             <Button

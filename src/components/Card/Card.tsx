@@ -1,7 +1,7 @@
 import { CardGroupProps, CardProps } from "./Card.types";
 import { CardGroupWrapper, CardWrapper } from "./Card.styles";
 
-export function Card({ sobtitle, title, description }: CardProps) {
+export const Card = ({ sobtitle, title, description }: CardProps) => {
     return (
         <CardWrapper>
             <span> {sobtitle} </span>
@@ -11,7 +11,7 @@ export function Card({ sobtitle, title, description }: CardProps) {
     );
 }
 
-export function CardGroup({ children }: CardGroupProps) {
+export const CardGroup = ({ children }: CardGroupProps) => {
     return (
         <CardGroupWrapper>
             {children}

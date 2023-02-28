@@ -30,24 +30,19 @@ export default createGlobalStyle`
         outline: none;
     }
 
-    * {
-        // Scroll bar do browser...
-        // Firefox.
-        scrollbar-width: auto; // values: auto, thin ou none.
-        scrollbar-color: var(--gray) transparent;
+    html {
+        scroll-behavior: smooth;
+    }
 
-        // Chrome, Edge e Safari ...
-        &::-webkit-scrollbar { // BAR...
-            width: 0.938rem;
-        }
+    &::-webkit-scrollbar {
+        width: 0.938rem;
+        padding-right: 0.25rem;
+        background: transparent;
+    }
 
-        &::-webkit-scrollbar-thumb { // BAR ALÇA...
-            background-color:  var(--gray);
-        }
-
-        &::-webkit-scrollbar-track { // BAR FUNDO...
-            background-color: transparent;
-        }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 0.5rem;
+        background: var(--gray);
     }
 
     html, body {
@@ -60,7 +55,7 @@ export default createGlobalStyle`
         font-family: var(--font);
         font-weight: 300;
         color: var(--grayDark);
-        line-height: calc(1em + 0.8rem); // Altura variavél para a fonte...
+        line-height: calc(1em + 0.8rem);
         letter-spacing: 0.10rem;
         text-transform: none;
     }
@@ -68,7 +63,7 @@ export default createGlobalStyle`
     input, button, textarea, select {
         margin: 0;
 
-        font: inherit; // Para que os elementos peguem a fonte do pai...
+        font: inherit; 
         letter-spacing: normal;
         text-transform: none;
         text-align: start;

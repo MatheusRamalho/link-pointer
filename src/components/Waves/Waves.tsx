@@ -1,6 +1,6 @@
 import { WavesWrapper } from './Waves.styles';
 
-export function Waves() {
+export const Waves = () => {
     return (
         <>
             <WavesWrapper className="wave__one"></WavesWrapper>

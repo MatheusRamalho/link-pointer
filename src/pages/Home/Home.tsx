@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom';
 
-// COMPONENTS...
 import { Waves } from '../../components/Waves/Waves';
 import { Card, CardGroup } from '../../components/Card/Card';
 import { Button } from '../../components/Button/Button';
 
-// STYLES...
 import { SectionHeader, SectionInfos } from './Home.styles';
-import { Smartphone } from '../../components/Smartphone';
 
-export function Home() {
+export const HomePage = () => {
     return (
         <>
             <SectionHeader>
