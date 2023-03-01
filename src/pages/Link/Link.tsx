@@ -1,19 +1,16 @@
 import { Link } from 'react-router-dom';
 
-// COMPONENTS...
-import { Waves } from '../../components/Waves/Waves';
-import { Button } from '../../components/Button/Button';
-import { SocialMedia, SocialMediaItem } from '../../components/SocialMedia/SocialMedia';
-
-// STYLES...
+import { Waves } from '../../components/Waves';
+import { Button } from '../../components/Button';
+import { SocialMedia } from '../../components/SocialMedia';
 import { SectionLink } from './Link.styles';
 
-import homeImg from '../../assets/svgs/home.svg';
-import avatarImg from '../../assets/svgs/avatar.svg';
-import siteImg from '../../assets/svgs/site.svg';
-import instagramImg from '../../assets/svgs/instagram.svg';
-import facebookImg from '../../assets/svgs/facebook.svg';
-import twitterImg from '../../assets/svgs/twitter.svg';
+import homeIcon from '../../assets/svgs/home.svg';
+import avatarIcon from '../../assets/svgs/avatar.svg';
+import siteIcon from '../../assets/svgs/site.svg';
+import instagramIcon from '../../assets/svgs/instagram.svg';
+import facebookIcon from '../../assets/svgs/facebook.svg';
+import twitterIcon from '../../assets/svgs/twitter.svg';
 
 export const LinkPage = () => {
     return (
@@ -22,7 +19,7 @@ export const LinkPage = () => {
 
             <Link to="/">
                 <Button isCircle id="button__home">
-                    <img src={homeImg} alt="." />
+                    <img src={homeIcon} alt="." />
                 </Button>
             </Link>
 
@@ -30,7 +27,7 @@ export const LinkPage = () => {
                 <div className="page__header">
                     <div className="link__profile container__">
                         <div className="profile__avatar">
-                            <img className="" src={avatarImg} alt="Usuário" />
+                            <img className="" src={avatarIcon} alt="Usuário" />
                         </div>
 
                         <div className="profile__description">
@@ -39,31 +36,31 @@ export const LinkPage = () => {
                         </div>
 
                         <div className="profile__socials">
-                            <SocialMedia>
-                                <SocialMediaItem
+                            <SocialMedia.Root>
+                                <SocialMedia.Item
                                     link="https://matheusramalho.dev/"
                                     name="Site Matheus Ramalho"
-                                    image={siteImg}
+                                    image={siteIcon}
                                 />
 
-                                <SocialMediaItem
+                                <SocialMedia.Item
                                     link="https://www.instagram.com/"
                                     name="Site Matheus Ramalho"
-                                    image={instagramImg}
+                                    image={instagramIcon}
                                 />
 
-                                <SocialMediaItem
+                                <SocialMedia.Item
                                     link="https://twitter.com/"
                                     name="Site Matheus Ramalho"
-                                    image={twitterImg}
+                                    image={twitterIcon}
                                 />
 
-                                <SocialMediaItem
+                                <SocialMedia.Item
                                     link="https://www.facebook.com/"
                                     name="Site Matheus Ramalho"
-                                    image={facebookImg}
+                                    image={facebookIcon}
                                 />
-                            </SocialMedia>
+                            </SocialMedia.Root>
                         </div>
                     </div>
 
@@ -79,7 +76,7 @@ export const LinkPage = () => {
                                 </a>
 
                                 <div className="link__figure">
-                                    <img src={avatarImg} alt="Ícone do link" />
+                                    <img src={avatarIcon} alt="Ícone do link" />
                                 </div>
 
                                 <div className="link__infos">

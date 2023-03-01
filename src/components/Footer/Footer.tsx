@@ -1,12 +1,12 @@
 import { FooterWrapper } from './Footer.styles';
 
 import { Button } from '../Button/Button';
-import { SocialMedia, SocialMediaItem } from '../SocialMedia/SocialMedia';
+import { SocialMedia } from '../SocialMedia';
 
-import logoImg from '../../assets/svgs/logo.svg';
-import triangleImg from '../../assets/svgs/triangle.svg';
-import siteImg from '../../assets/svgs/site.svg';
-import githubImg from '../../assets/svgs/github.svg';
+import brandIcon from '../../assets/svgs/logo.svg';
+import triangleIcon from '../../assets/svgs/triangle.svg';
+import siteIcon from '../../assets/svgs/site.svg';
+import githubIcon from '../../assets/svgs/github.svg';
 
 export const Footer = () => {
     return (
@@ -15,12 +15,18 @@ export const Footer = () => {
                 isCircle
                 id="footer__backTop"
             >
-                <img src={triangleImg} alt="." />
+                <img
+                    src={triangleIcon}
+                    alt="."
+                />
             </Button>
 
             <div className="footer__content container__">
                 <div className="footer__inner">
-                    <img src={logoImg} alt="Link Pointer" />
+                    <img
+                        src={brandIcon}
+                        alt="Link Pointer"
+                    />
                     <p> Link Pointer </p>
                 </div>
 
@@ -30,19 +36,19 @@ export const Footer = () => {
                     </address>
 
                     <div className="contacts__">
-                        <SocialMedia>
-                            <SocialMediaItem
+                        <SocialMedia.Root>
+                            <SocialMedia.Item
                                 link="https://matheusramalho.dev/"
                                 name="Site Matheus Ramalho"
-                                image={siteImg}
+                                image={siteIcon}
                             />
 
-                            <SocialMediaItem
+                            <SocialMedia.Item
                                 link="https://github.com/MatheusRamalho"
                                 name="Github Matheus Ramalho"
-                                image={githubImg}
+                                image={githubIcon}
                             />
-                        </SocialMedia>
+                        </SocialMedia.Root>
                     </div>
                 </div>
             </div>

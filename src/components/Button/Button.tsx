@@ -4,7 +4,7 @@ import { ButtonWrapper } from "./Button.styles";
 export const Button = ({ isOutlined = false, isCircle = false, ...props }: ButtonProps) => {
     return (
         <ButtonWrapper
-            className={`button__ ${isOutlined ? 'outlined__' : ''} ${isCircle ? 'circle__' : ''}`}
+            className={`${isOutlined ? 'button--outlined' : ''} ${isCircle ? 'button--circle' : ''}`}
             {...props}
         >
             {props.children}

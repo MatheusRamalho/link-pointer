@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 
-export type SocialMediaProps = {
+export type SocialMediaRootProps = {
     children: ReactNode;
 }
 

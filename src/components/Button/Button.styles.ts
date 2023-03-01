@@ -33,7 +33,7 @@ export const ButtonWrapper = styled.button`
         cursor: not-allowed;
     }
 
-    &.outlined__ {
+    &.button--outlined {
         border: 0.125rem solid currentColor;
         background-color: transparent;
 
@@ -44,7 +44,7 @@ export const ButtonWrapper = styled.button`
         }
     }
 
-    &.circle__ {
+    &.button--circle {
         width: 3.125rem;
         height: 3.125rem;
         padding: 0;

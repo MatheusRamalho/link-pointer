@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
-export const CardWrapper = styled.article`
+export const CardRootWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+`;
+
+export const CardContentWrapper = styled.article`
     min-width: 18.75rem;
     height: auto;
     margin: 0.625rem;
@@ -22,11 +29,4 @@ export const CardWrapper = styled.article`
 
         font-size: 1.8rem;
     }
-`;
-
-export const CardGroupWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
 `;

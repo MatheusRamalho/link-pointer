@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SocialMediaWrapper = styled.ul`
+export const SocialMediaRootWrapper = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;

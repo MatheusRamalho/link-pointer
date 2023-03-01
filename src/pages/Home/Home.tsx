@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-import { Waves } from '../../components/Waves/Waves';
-import { Card, CardGroup } from '../../components/Card/Card';
-import { Button } from '../../components/Button/Button';
+import { Card } from '../../components/Card';
+import { Waves } from '../../components/Waves';
+import { Button } from '../../components/Button';
 
 import { SectionHeader, SectionInfos } from './Home.styles';
 
@@ -44,25 +44,25 @@ export const HomePage = () => {
                         </div>
                     </div>
 
-                    <CardGroup>
-                        <Card
+                    <Card.Root>
+                        <Card.Content
                             sobtitle="01"
                             title="tem"
                             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores maxime architecto molestiae, quam mollitia ab commodi recusandae et quod molestias dicta? Autem minus labore alias minima saepe at debitis"
                         />
 
-                        <Card
+                        <Card.Content
                             sobtitle="02"
                             title="tem"
                             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores maxime architecto molestiae, quam mollitia ab commodi recusandae et quod molestias dicta? Autem minus labore alias minima saepe at debitis"
                         />
 
-                        <Card
+                        <Card.Content
                             sobtitle="03"
                             title="tem"
                             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores maxime architecto molestiae, quam mollitia ab commodi recusandae et quod molestias dicta? Autem minus labore alias minima saepe at debitis"
                         />
-                    </CardGroup>
+                    </Card.Root>
                 </div>
             </SectionInfos>
         </>

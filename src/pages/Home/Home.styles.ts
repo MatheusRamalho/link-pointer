@@ -58,8 +58,6 @@ export const SectionInfos = styled.section`
         }
 
         .infos__inner {
-            /* justify-content: flex-end; */
-
             div {
                 max-width: 60%;
                 height: auto;
@@ -92,8 +90,6 @@ export const SectionInfos = styled.section`
 
     @media(max-width: 1400px) {
         .infos__content {
-            // margin-top: 12rem;
-
             .infos__inner div {
                 max-width: 100%;
             }

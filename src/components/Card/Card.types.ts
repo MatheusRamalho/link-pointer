@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
-export type CardProps = {
+export type CardRootProps = {
+    children: ReactNode;
+}
+
+export type CardContentProps = {
     sobtitle: string;
     title: string;
     description: string;
-}
-
-export type CardGroupProps = {
-    children: ReactNode;
 }
